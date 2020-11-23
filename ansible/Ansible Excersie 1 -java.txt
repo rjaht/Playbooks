@@ -1,0 +1,13 @@
+Java installation automated with ansible
+
+manual steps
+A- Centos machine
+sudo update
+sudo yum install java
+
+B- Ubuntu machine
+sudo update
+sudo apt-cache search jdk | less
+sudo apt-get install openjdk-8-jdk
+
+

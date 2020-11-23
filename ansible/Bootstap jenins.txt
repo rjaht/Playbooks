@@ -1,0 +1,21 @@
+#!/bin/bash
+sudo apt-get update -y
+sudo apt-get install openjdk-8-jdk -y
+apt-get update -y
+apt-get install python3-pip -y
+apt-get update -y
+apt-get install maven -y
+apt-get update -y
+
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian binary/ > \
+    /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update -y
+sudo apt-get install jenkins -y
+
+
+#!/bin/bash
+yum update -y
+yum install java-1.8.0-openjdk -y
+yum update -y

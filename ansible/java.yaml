@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  #install java on hosts
+  tasks:
+    - name: install openjdk
+      apt:
+        name: install openjdk-8-jdk
+        update_cahce: yes
+        state: present

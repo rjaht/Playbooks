@@ -1,0 +1,9 @@
+---
+- hosts: "centos"
+  become: yes
+  #install java on debian host
+  tasks:
+     - name: install openjdk
+       yum:
+        name: java-1.8.0-openjdk-accessibility.x86_64
+        state: present
