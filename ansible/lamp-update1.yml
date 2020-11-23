@@ -14,15 +14,15 @@
           state: restarted
 # install php and modules
     - name: install php
-      apt:
+      yum:
           name: install php
           state: present
     - name: install libapache2-mod-php
-      apt:
+      yum:
           name: libapache2-mod-php
           state: present
     - name: install php-cli
-      apt: 
+      yum: 
          name : install php-cli
          state: present
 # restart apache2 
