@@ -1,0 +1,20 @@
+---
+- hosts: all
+    become: yes
+  # install php and modules
+      - name: install php
+         yum:
+            name: install php
+            state: present
+      - name: install libapache2-mod-php
+          yum:
+            name: libapache2-mod-php
+            state: present
+      - name: install php-cli
+          yum: 
+            name: install php-cli
+            state: present
+    # restart php
+     - service:   
+           name: restart apache2
+           state: restarted
